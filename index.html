@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <h1>¡TriviaTour!</h1>
+   
+    <div id = inicio>
+    <h2>Descubre cuánto conoces de tu País??</h2>
+
+<form>
+  <b><p><label for="text">¿Cómo te llamas?</label></p></b>
+  <input id="name" type = "text" placeholder="escribe tu nombre">
+  <button id= "btn"> enviar </button>
+</form>
+      </div>
+
+<div id = "options" style= "display:none">
+<h2> Elige una opci
+  on
+    </h2>
+<p> Bienvenida!!
+  <div id="tunombre"> </div>
+  </p>
+      <button id= "option1">Costa</button>
+      <button id="option2">Selva</button>
+</div>
+
+   <div id = "costa" class= "trivia" style="display:none">
+  <h1>Costa</h1>
+
+<b><p>1.-¿A qué depatamento se le conoce como la ciudad de la eterna primavera?</p></b>
+<p onclick=""><input type="radio" name="preg1" id="resp11">La Libertad</p>
+<p onclick=""><input type="radio" name="preg1" id="resp12">Tacna</p>
+<p onclick=""><input type="radio" name="preg1" id="resp13">Piura</p>
+
+<b><p>2.-¿El plato tipico Rocoto relleno a dónde pertenece?</p></b>
+<p onclick=""><input type="radio" name="preg2" id="resp21">Tumbes</p>
+<p onclick=""><input type="radio" name="preg2" id="resp22">Arequipa</p>
+<p onclick=""><input type="radio" name="preg2" id="resp23">Piura</p>
+
+<b><p>3.-¿Dónde se encuentra la Laguna de la Huacachina?</p></b>
+<p onclick=""><input type="radio" name="preg3" id="resp31">Arequipa</p>
+<p onclick=""><input type="radio" name="preg3" id="resp32">Lima</p>
+<p onclick=""><input type="radio" name="preg3" id="resp33">Ica</p>
+
+<p><input type="button" value="Respuestas" onclick="resultado1()"/></p>
+<br/>
+     
+</div>
+
+<div id = "selva" class= "trivia" style="display:none">
+
+  <h1>Selva</h1>
+
+<b><p>1.-¿Cuál es el departamento que abarca la mayor parte de la Selva?</p></b>
+<p onclick=""><input type="radio" name="preg4" id="resp44"> Loreto</p>
+<p onclick=""><input type="radio" name="preg4" id="resp45"> Ucayali</p>
+<p onclick=""><input type="radio" name="preg4" id="resp46"> Madre de Dios</p>
+
+<b><p>2.-¿Dónde se encuentra ubicada la Laguna Azul?</p></b>
+<p onclick=""><input type="radio" name="preg5" id="resp54">Maynas</p>
+<p onclick=""><input type="radio" name="preg5" id="resp55">Tarapoto</p>
+<p onclick=""><input type="radio" name="preg5" id="resp56">Iquitos</p>
+
+<b><p>3.-¿A qué departamento pertecene el plato típico del Juane?</b>
+<p onclick=""><input type="radio" name="preg6" id="resp64">Loreto</p>
+<p onclick=""><input type="radio" name="preg6" id="resp65">San Martin</p>
+<p onclick=""><input type="radio" name="preg6" id="resp66">Ucayali</p>
+
+<p><input type="button" value="Respuestas" onclick="resultado()"/></p>
+<br/>
+<a href="Pagina1.html">Volver a intentarlo</a>
+</div>
+
+  <div id= "pagresultados" style= "display:none">
+ <p>BUEN INTENTO!! </p>
+    <div id="resp"></div>
+   
+    <br>
+    <button id=tryAgain>   Volver a intentarlo </button>
+ 
+  </div>
+  </body>
+</html>
